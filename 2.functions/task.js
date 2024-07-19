@@ -4,9 +4,7 @@ function getArrayParams(...arr) {
   let sum = 0;
   let avg = 0;
 
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-  }
+  sum = arr.reduce((acc, val) => acc + val);
 
   avg = sum / arr.length;
 
