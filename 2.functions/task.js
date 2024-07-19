@@ -6,7 +6,7 @@ function getArrayParams(...arr) {
 
   sum = arr.reduce((acc, val) => acc + val);
 
-  avg =  Math.round((sum / arr.length;) * 100.0) / 100.0;
+  avg =  Math.round((sum / arr.length) * 100.0) / 100.0;
 
   return { min: min, max: max, avg: avg };
 }
