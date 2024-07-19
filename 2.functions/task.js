@@ -2,11 +2,12 @@ function getArrayParams(...arr) {
   let min = Math.min(...arr);
   let max = Math.max(...arr);
   let sum = 0;
+  let preAvg = sum / arr.length;
   let avg = 0;
 
   sum = arr.reduce((acc, val) => acc + val);
 
-  avg = Math.round((sum / arr.length) * 100.0) / 100.0;
+  avg =  Math.round((preAvg) * 100.0) / 100.0;
 
   return { min: min, max: max, avg: avg };
 }
