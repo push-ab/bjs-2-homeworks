@@ -15,6 +15,9 @@ Student.prototype.addMarks = function (...marks) {
   if (this.marks) {
     this.marks.push(...marks);
   }
+  if (this.excluded.length > 0) {
+    delete this.marks
+  }
 }
 
 Student.prototype.getAverage = function () {
