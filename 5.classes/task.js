@@ -87,7 +87,7 @@
      giveBookByName(bookName) {
          for (let i = 0; i < this.books.length; i++) {
              if (this.books[i].name === bookName) {
-                 console.log(this.books[i].name === bookName)
+                 console.log(this.books[i].name === bookName);
                  this.books.splice(i, 1);
                  return this.books[i];
              }
