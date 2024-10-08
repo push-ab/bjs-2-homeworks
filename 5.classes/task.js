@@ -68,9 +68,9 @@
          this.books = [];
      }
 
-     addBook(PrintEditionItem) {
-         if (PrintEditionItem.state > 30) {
-             this.books.push(PrintEditionItem);
+     addBook(printItem) {
+         if (printItem.state > 30) {
+             this.books.push(printItem);
          }
      }
 
