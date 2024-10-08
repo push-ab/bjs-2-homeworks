@@ -1,4 +1,4 @@
- class PrintEditionItem {
+class PrintEditionItem {
      constructor(name, releaseDate, pagesCount) {
          this.name = name;
          this.releaseDate = releaseDate;
@@ -68,9 +68,9 @@
          this.books = [];
      }
 
-     addBook(printItem) {
-         if (printItem.state > 30) {
-             this.books.push(printItem);
+     addBook(book) {
+         if (book.state > 30) {
+             this.books.push(book);
          }
      }
 
