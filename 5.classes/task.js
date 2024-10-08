@@ -37,7 +37,7 @@
      constructor (name, releaseDate, pagesCount, author) {
          super(name, releaseDate, pagesCount)
          this.type = 'book';
-         this.author = author
+         this.author = author;
      }
  }
 
